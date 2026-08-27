@@ -263,22 +263,6 @@ ViewAny runs 100% locally on your computer. All parsing, rendering, and conversi
 
 ---
 
-## 🔑 License Key Generator
-
-The admin license-key generator has been **stripped out** of the extension and is now a
-standalone **Rust** command-line tool in [`keygen/`](keygen/README.md).
-
-- Zero third-party dependencies; the release build is a single portable `viewany-keygen.exe`
-- Uses the exact same algorithm as the in-extension verifier (SHA-256 + fixed salt `VIEWANY_OFFICE_SECRET_KEY_2026`)
-- Supports generate / verify / quiet modes; exit code 0 (ok), 1 (invalid), 2 (bad args)
-
-```powershell
-cd keygen
-cargo build --release
-.\target\release\viewany-keygen.exe VA-TEST-1234-5678        # generate a license key
-.\target\release\viewany-keygen.exe -q VA-TEST-1234-5678     # output key only (for scripts)
-.\target\release\viewany-keygen.exe --verify VA-PRO-XXXX-XXXX-XXXX-XXXX VA-TEST-1234-5678  # verify
-```
 
 ---
 
