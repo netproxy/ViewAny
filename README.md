@@ -16,7 +16,7 @@ If ViewAny has saved you time, consider supporting continued development:
 
 [![Buy me a coffee](https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png)](https://ko-fi.com/pharaoh_pig)
 
-**💖 赞助链接 / Sponsor Link:** [https://ko-fi.com/pharaoh\_pig](https://ko-fi.com/pharaoh_pig)
+**💖 赞助链接 / Sponsor Link:** [support us](https://www.creem.io/payment/prod_Bhr8PSD0C8p30IbMxcvy8)
 
  *
 
