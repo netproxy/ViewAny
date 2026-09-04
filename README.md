@@ -1,7 +1,7 @@
 
 # ViewAny - Office, HTML & PDF WYSIWYG Suite for VS Code
 
-<img src="media/icon.png" alt="ViewAny Logo"  style="width:128;max-width:128;" />
+<img src="https://raw.githubusercontent.com/netproxy/ViewAny/refs/heads/main/icon.png" alt="ViewAny Logo"  style="width:128;max-width:128;" />
 
 ### All-in-One Office, HTML & Document Suite for VS Code
 
