@@ -9,12 +9,6 @@
 
  *
 
-### 💖 Support / 赞助支持
-
-If ViewAny has saved you time, consider supporting continued development:  
-*如果 ViewAny 为您节省了宝贵的时间，欢迎赞助支持后续的持续开发：*
-
-[![Buy me a coffee](https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png)](https://www.creem.io/payment/prod_Bhr8PSD0C8p30IbMxcvy8)
 
 **💖 赞助链接 / Sponsor Link:** [support us](https://www.creem.io/payment/prod_Bhr8PSD0C8p30IbMxcvy8)
 
@@ -33,7 +27,7 @@ If ViewAny has saved you time, consider supporting continued development:
 
 ### 🔗 Quick Links / 快捷入口
 
-**[🌐 GitHub 仓库](https://github.com/netproxy/ViewAny)**  |  **[🐛 问题收集 / Issues](https://github.com/netproxy/ViewAny/issues)**  |  **[⬇️ 下载 / Releases](https://github.com/netproxy/ViewAny/releases)**  |  **[💖 赞助 / Support](https://ko-fi.com/pharaoh_pig)**
+**[🌐 GitHub 仓库](https://github.com/netproxy/ViewAny)**  |  **[🐛 问题收集 / Issues](https://github.com/netproxy/ViewAny/issues)**  |  **[⬇️ 下载 / Releases](https://github.com/netproxy/ViewAny/releases)**  
 
 **📮 问题收集地址 / Issue Tracker:** [https://github.com/netproxy/ViewAny/issues](https://github.com/netproxy/ViewAny/issues)  
 **💖 赞助支持 / Buy Me a Coffee:** [https://ko-fi.com/pharaoh\_pig](https://ko-fi.com/pharaoh_pig)
