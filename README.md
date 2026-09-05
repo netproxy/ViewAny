@@ -30,7 +30,7 @@
 **[🌐 GitHub 仓库](https://github.com/netproxy/ViewAny)**  |  **[🐛 问题收集 / Issues](https://github.com/netproxy/ViewAny/issues)**  |  **[⬇️ 下载 / Releases](https://github.com/netproxy/ViewAny/releases)**  
 
 **📮 问题收集地址 / Issue Tracker:** [https://github.com/netproxy/ViewAny/issues](https://github.com/netproxy/ViewAny/issues)  
-**💖 赞助支持 / Buy Me a Coffee:** [https://ko-fi.com/pharaoh\_pig](https://ko-fi.com/pharaoh_pig)
+
 
 ### 🌐 Language Navigation / 语言切换
 
