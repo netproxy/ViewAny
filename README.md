@@ -21,7 +21,7 @@
 [![GitHub](https://img.shields.io/badge/GitHub-netproxy%2FViewAny-181717?logo=github)](https://github.com/netproxy/ViewAny)  
 [![Issues](https://img.shields.io/github/issues/netproxy/ViewAny)](https://github.com/netproxy/ViewAny/issues)  
 [![Release](https://img.shields.io/github/v/release/netproxy/ViewAny)](https://github.com/netproxy/ViewAny/releases)  
-[![Buy Me A Coffee](https://img.shields.io/badge/Buy_me_a_coffee-FFDD00?logo=buy-me-a-coffee&logoColor=black)](https://ko-fi.com/pharaoh_pig)
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy_me_a_coffee-FFDD00?logo=buy-me-a-coffee&logoColor=black)]([https://ko-fi.com/pharaoh_pig](https://www.creem.io/payment/prod_Bhr8PSD0C8p30IbMxcvy8))
 
  *
 
