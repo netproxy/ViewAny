@@ -1,0 +1,50 @@
+name: CI
+
+# demo 素材仓：校验 demo 文件齐全且格式有效
+# 跑在自建 runner 上（jlinux-viewany-1/2），不消耗 GitHub 云分钟
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  validate-demos:
+    runs-on: [self-hosted, ubuntu-local]
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 检查 demo 文件齐全
+        run: |
+          for f in README.md demo.md demo.csv demo.xlsx demo_features.md \
+                   demo_long_document.md demo_math_and_numbers.md \
+                   demo_math_and_numbers_exported.html icon.png 1.png 2.png 3.png; do
+            [ -f "$f" ] || { echo "缺少 $f"; exit 1; }
+          done
+          echo "demo 文件齐全"
+
+      - name: 校验文本文件非空且 UTF-8 合法
+        run: |
+          python3 - <<'EOF'
+          for f in ["README.md", "demo.md", "demo_features.md",
+                    "demo_long_document.md", "demo_math_and_numbers.md",
+                    "demo_math_and_numbers_exported.html"]:
+              data = open(f, encoding="utf-8").read()
+              assert data.strip(), f + " 为空"
+              print(f + ": OK")
+          EOF
+
+      - name: 校验 CSV 可解析
+        run: |
+          python3 -c "import csv; rows=list(csv.reader(open('demo.csv', encoding='utf-8-sig'))); assert len(rows)>1, 'csv 无数据'; print(f'demo.csv: {len(rows)} 行 OK')"
+
+      - name: 校验 PNG 文件头
+        run: |
+          python3 -c "
+          imgs = ['1.png', '2.png', '3.png', 'icon.png']
+          magic = b'\x89PNG\r\n\x1a\n'
+          for img in imgs:
+              assert open(img,'rb').read(8) == magic, img + ' 不是有效 PNG'
+          print('PNG 校验通过:', ', '.join(imgs))
+          "
