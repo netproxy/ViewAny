@@ -9,13 +9,9 @@
 ### 1.1 大纲核心特性
 
 *   **多级嵌套**：自动提取文档中的 H1-H6 标题，以优雅的缩进树形展示。
-    
 *   **平滑定位**：点击任意大纲条目，文档平滑滚动定位并伴随章节高亮动效。
-    
 *   **实时联动 (ScrollSpy)**：当在文档中滚动时，左侧目录会自动跟随高亮当前阅读位置。
-    
 *   **即时搜索**：在大纲上方的搜索框输入关键词，即时过滤匹配的章节。
-    
 
 ## 2\. Mermaid 流程图与图表渲染与编辑
 
@@ -24,6 +20,7 @@ ViewAny 内置 **Mermaid 渲染与交互式编辑器**。在所见即所得模�
 ### 2.1 架构流程图 (Flowchart)
 
 ```mermaid
+%%{init: {'themeVariables': {'fontSize': '20px'}, 'sequence': {'actorFontSize': 20, 'messageFontSize': 18, 'noteFontSize': 16}, 'gantt': {'fontSize': 16, 'sectionFontSize': 20, 'barHeight': 28}, 'themeCSS': '.edgeLabel { font-size: 15px !important; font-weight: bold !important; } .messageText { font-size: 18px !important; } .actor, text.actor { font-size: 20px !important; } .taskText { font-size: 16px !important; } .sectionTitle { font-size: 20px !important; }'}}%%
 graph TD
     User([👤 用户输入]) --> Router{格式路由 Router}
     Router -- .md --> MarkdownEngine[📝 Markdown 所见即所得引擎]
@@ -42,6 +39,7 @@ graph TD
 ### 2.2 交互时序图 (Sequence Diagram)
 
 ```mermaid
+%%{init: {'themeVariables': {'fontSize': '18px'}, 'sequence': {'actorFontSize': 18, 'messageFontSize': 16, 'noteFontSize': 14}, 'gantt': {'fontSize': 14, 'sectionFontSize': 18, 'barHeight': 26}, 'themeCSS': '.edgeLabel { font-size: 14px !important; font-weight: bold !important; } .messageText { font-size: 16px !important; } .actor, text.actor { font-size: 18px !important; } .taskText, text.taskText, .taskTextOutsideRight, text.taskTextOutsideRight, .taskTextOutsideLeft, text.taskTextOutsideLeft { font-size: 14px !important; text-anchor: start !important; } .sectionTitle { font-size: 18px !important; }'}}%%
 sequenceDiagram
     autonumber
     actor Dev as 开发者 Developer
@@ -59,12 +57,13 @@ sequenceDiagram
 ### 2.3 甘特图计划 (Gantt Chart)
 
 ```mermaid
+%%{init: {'themeVariables': {'fontSize': '18px'}, 'sequence': {'actorFontSize': 18, 'messageFontSize': 16, 'noteFontSize': 14}, 'gantt': {'fontSize': 14, 'sectionFontSize': 18, 'barHeight': 26}, 'themeCSS': '.edgeLabel { font-size: 14px !important; font-weight: bold !important; } .messageText { font-size: 16px !important; } .actor, text.actor { font-size: 18px !important; } .taskText, text.taskText, .taskTextOutsideRight, text.taskTextOutsideRight, .taskTextOutsideLeft, text.taskTextOutsideLeft { font-size: 14px !important; text-anchor: start !important; } .sectionTitle { font-size: 18px !important; }'}}%%
 gantt
     title ViewAny 演进路线与实施里程碑
     dateFormat  YYYY-MM-DD
     section 基础套件
     多格式支持 (MD/Word/Sheet/PDF) :done, des1, 2026-01-01, 2026-01-15
-    多语言国际化 (4语本地化)       :done, des2, 2026-01-16, 2026-01-22
+    全功能多语言国际化 (6国语言支持) :done, des2, 2026-01-16, 2026-01-22
     section 高级功能增强
     Mermaid 矢量图表引擎           :active, crit, des3, 2026-01-23, 2026-02-05
     TOC 目录大纲导航与 ScrollSpy   :active, crit, des4, 2026-01-28, 2026-02-10
@@ -80,7 +79,7 @@ ViewAny 提供多维度的图片管理功能：
 1. 插入途径：点击工具栏中的 🖼️ 图片 按钮，通过网络 URL 或本地文件选择器插入。直接从系统剪贴板复制截图并在文档中 Ctrl+V 粘贴（自动转为 Data URL）。从文件管理器直接拖拽图片文件到文档中。
 2. 交互式浮动控制栏：在所见即所得视图中点击下方示例图片，将自动浮现图片控制栏。支持快速缩放：25%、50%、75%、100%。支持对齐方式：⇤ 靠左浮动、≡ 居中对齐、⇥ 靠右浮动。支持直接编辑 Alt 描述说明、替换图片与一键删除。
 
-<img src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=600&auto=format&fit=crop&q=80" alt="Beautiful Gradient Banner"  style="width:75%;max-width:75%;display:block;margin:16px auto;" />
+<img src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=600&auto=format&fit=crop&q=80" alt="Beautiful Gradient Banner" style="width:100%;max-width:100%;display:block;margin:16px auto;" />
 
 ## 4\. LaTeX 高清数学与数字公式
 
@@ -110,3 +109,24 @@ $$
 | **多格式导出** | PDF / DOCX / HTML / 表格无限制导出 | 全格式 | 👑 VIP尊享 |
 
 > 提示：在上方模式切换栏中点击 `双栏分屏` 或 `纯源码`，可以实时比对富文本渲染与逆向生成的 Markdown 代码。
+
+## 6.代码块
+
+```json
+{
+  "extension.description": "All-in-One Markdown (MD), Office, HTML & PDF WYSIWYG Suite for VS Code: Typora-like Markdown editor, Word (DOCX/DOC) viewer, Excel (XLSX/CSV) spreadsheets, HTML live preview, and PDF HD reader & annotator with bi-directional split-view sync and multi-format export.",
+  "command.openWithWysiwyg": "ViewAny: Switch to WYSIWYG Editor",
+  "command.exportDocument": "ViewAny: Export Current Document...",
+  "command.registerLicense": "ViewAny: Register & Activate License",
+  "command.resetLicense": "ViewAny: Reset / Deactivate License",
+  "editor.markdown.displayName": "ViewAny: Markdown WYSIWYG Editor", 
+  "editor.docx.displayName": "ViewAny: Word (DOCX) Visual Editor",
+  "editor.sheet.displayName": "ViewAny: Excel Spreadsheet Visual Editor",
+  "editor.pdf.displayName": "ViewAny: PDF HD Viewer & Annotator",
+  "editor.html.displayName": "ViewAny: HTML WYSIWYG Viewer & Editor",
+  "config.title": "ViewAny Configuration",
+  "config.autoSyncMarkdown": "Whether to automatically sync source code when editing Markdown in WYSIWYG mode",
+  "config.pdfDefaultZoom": "Default zoom level for PDF reader",
+  "config.exportWatermark": "Whether to add a light watermark on export in unregistered version"
+}
+```
